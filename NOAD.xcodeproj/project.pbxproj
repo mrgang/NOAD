@@ -8,24 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		CEA22A3A204CF38500D0A9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA22A39204CF38500D0A9C0 /* AppDelegate.swift */; };
-		CEA22A3C204CF38500D0A9C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA22A3B204CF38500D0A9C0 /* ViewController.swift */; };
 		CEA22A3F204CF38500D0A9C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA22A3D204CF38500D0A9C0 /* Main.storyboard */; };
 		CEA22A41204CF38500D0A9C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA22A40204CF38500D0A9C0 /* Assets.xcassets */; };
 		CEA22A44204CF38500D0A9C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA22A42204CF38500D0A9C0 /* LaunchScreen.storyboard */; };
+		CEA22A52204CF3AC00D0A9C0 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = CEA22A51204CF3AC00D0A9C0 /* blockerList.json */; };
+		CEA22A54204CF3AC00D0A9C0 /* ContentBlockerRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA22A53204CF3AC00D0A9C0 /* ContentBlockerRequestHandler.swift */; };
+		CEA22A58204CF3AC00D0A9C0 /* adb.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CEA22A4F204CF3AC00D0A9C0 /* adb.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CED16567204E331500211B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED16566204E331500211B75 /* ViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEA22A56204CF3AC00D0A9C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEA22A2E204CF38400D0A9C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEA22A4E204CF3AC00D0A9C0;
+			remoteInfo = adb;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEA22A5C204CF3AC00D0A9C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CEA22A58204CF3AC00D0A9C0 /* adb.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CEA22A36204CF38400D0A9C0 /* NOAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NOAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA22A39204CF38500D0A9C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEA22A3B204CF38500D0A9C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA22A3E204CF38500D0A9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA22A40204CF38500D0A9C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA22A43204CF38500D0A9C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA22A45204CF38500D0A9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA22A4F204CF3AC00D0A9C0 /* adb.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = adb.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA22A51204CF3AC00D0A9C0 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		CEA22A53204CF3AC00D0A9C0 /* ContentBlockerRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBlockerRequestHandler.swift; sourceTree = "<group>"; };
+		CEA22A55204CF3AC00D0A9C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED16566204E331500211B75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CEA22A33204CF38400D0A9C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA22A4C204CF3AC00D0A9C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA22A38204CF38400D0A9C0 /* NOAD */,
+				CEA22A50204CF3AC00D0A9C0 /* adb */,
 				CEA22A37204CF38400D0A9C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA22A36204CF38400D0A9C0 /* NOAD.app */,
+				CEA22A4F204CF3AC00D0A9C0 /* adb.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +94,24 @@
 		CEA22A38204CF38400D0A9C0 /* NOAD */ = {
 			isa = PBXGroup;
 			children = (
+				CED16566204E331500211B75 /* ViewController.swift */,
 				CEA22A39204CF38500D0A9C0 /* AppDelegate.swift */,
-				CEA22A3B204CF38500D0A9C0 /* ViewController.swift */,
 				CEA22A3D204CF38500D0A9C0 /* Main.storyboard */,
 				CEA22A40204CF38500D0A9C0 /* Assets.xcassets */,
 				CEA22A42204CF38500D0A9C0 /* LaunchScreen.storyboard */,
 				CEA22A45204CF38500D0A9C0 /* Info.plist */,
 			);
 			path = NOAD;
+			sourceTree = "<group>";
+		};
+		CEA22A50204CF3AC00D0A9C0 /* adb */ = {
+			isa = PBXGroup;
+			children = (
+				CEA22A51204CF3AC00D0A9C0 /* blockerList.json */,
+				CEA22A53204CF3AC00D0A9C0 /* ContentBlockerRequestHandler.swift */,
+				CEA22A55204CF3AC00D0A9C0 /* Info.plist */,
+			);
+			path = adb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +124,34 @@
 				CEA22A32204CF38400D0A9C0 /* Sources */,
 				CEA22A33204CF38400D0A9C0 /* Frameworks */,
 				CEA22A34204CF38400D0A9C0 /* Resources */,
+				CEA22A5C204CF3AC00D0A9C0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEA22A57204CF3AC00D0A9C0 /* PBXTargetDependency */,
 			);
 			name = NOAD;
 			productName = NOAD;
 			productReference = CEA22A36204CF38400D0A9C0 /* NOAD.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CEA22A4E204CF3AC00D0A9C0 /* adb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA22A59204CF3AC00D0A9C0 /* Build configuration list for PBXNativeTarget "adb" */;
+			buildPhases = (
+				CEA22A4B204CF3AC00D0A9C0 /* Sources */,
+				CEA22A4C204CF3AC00D0A9C0 /* Frameworks */,
+				CEA22A4D204CF3AC00D0A9C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = adb;
+			productName = adb;
+			productReference = CEA22A4F204CF3AC00D0A9C0 /* adb.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +164,15 @@
 				ORGANIZATIONNAME = "李刚";
 				TargetAttributes = {
 					CEA22A35204CF38400D0A9C0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					CEA22A4E204CF3AC00D0A9C0 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				CEA22A35204CF38400D0A9C0 /* NOAD */,
+				CEA22A4E204CF3AC00D0A9C0 /* adb */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +208,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA22A4D204CF3AC00D0A9C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA22A52204CF3AC00D0A9C0 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,12 +223,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA22A3C204CF38500D0A9C0 /* ViewController.swift in Sources */,
+				CED16567204E331500211B75 /* ViewController.swift in Sources */,
 				CEA22A3A204CF38500D0A9C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEA22A4B204CF3AC00D0A9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA22A54204CF3AC00D0A9C0 /* ContentBlockerRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEA22A57204CF3AC00D0A9C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEA22A4E204CF3AC00D0A9C0 /* adb */;
+			targetProxy = CEA22A56204CF3AC00D0A9C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CEA22A3D204CF38500D0A9C0 /* Main.storyboard */ = {
@@ -273,28 +376,66 @@
 		CEA22A49204CF38500D0A9C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGX46L2U6T;
 				INFOPLIST_FILE = NOAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sunsheen.NOAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CEA22A4A204CF38500D0A9C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGX46L2U6T;
 				INFOPLIST_FILE = NOAD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.sunsheen.NOAD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CEA22A5A204CF3AC00D0A9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGX46L2U6T;
+				INFOPLIST_FILE = adb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sunsheen.NOAD.adb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CEA22A5B204CF3AC00D0A9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KGX46L2U6T;
+				INFOPLIST_FILE = adb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.sunsheen.NOAD.adb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -315,6 +456,15 @@
 			buildConfigurations = (
 				CEA22A49204CF38500D0A9C0 /* Debug */,
 				CEA22A4A204CF38500D0A9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA22A59204CF3AC00D0A9C0 /* Build configuration list for PBXNativeTarget "adb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA22A5A204CF3AC00D0A9C0 /* Debug */,
+				CEA22A5B204CF3AC00D0A9C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
