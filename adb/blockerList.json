@@ -68,5 +68,26 @@
  "url-filter": ".*",
  "if-domain":["news.baidu.com"]
  }
+ },
+ {
+ "action": {
+ "type": "css-display-none",
+ "selector":"div.ads,div.ads-footer,#player-advertising,div.ads-player"
+ },
+ "trigger": {
+ "url-filter": ".*",
+ "if-domain":["www.qyl61.com"]
+ }
+ },
+ {
+ "action": {
+ "type": "block"
+ },
+ "trigger": {
+ "url-filter": ".*",
+  "resource-type":["image","script"],
+ "load-type":["third-party"],
+ "if-domain":["www.qyl61.com"]
+ }
  }
  ]
