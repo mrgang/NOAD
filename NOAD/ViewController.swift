@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = .blackTranslucent
         // Do any additional setup after loading the view.
-    }
-    
+    }    
 
     /*
     // MARK: - Navigation

@@ -52,7 +52,7 @@
  {
  "action": {
  "type": "css-display-none",
- "selector":"div.blank-frame,div.baiduapp-ad-container,#bottom"
+ "selector":"div.blank-frame,div.baiduapp-ad-container,#bottom,div.first-card-container"
  },
  "trigger": {
  "url-filter": ".*",
@@ -75,8 +75,7 @@
  "selector":"div.ads,div.ads-footer,#player-advertising,div.ads-player"
  },
  "trigger": {
- "url-filter": ".*",
- "if-domain":["www.qyl61.com"]
+ "url-filter": "www.qyl"
  }
  },
  {
@@ -85,9 +84,20 @@
  },
  "trigger": {
  "url-filter": ".*",
-  "resource-type":["image","script"],
+ "if-domain":["www.qyl82.com"],
+ "resource-type":["image","script"],
+ "load-type":["third-party"]
+ }
+ },
+ {
+ "action": {
+ "type": "block"
+ },
+ "trigger": {
+ "url-filter": ".*",
+ "resource-type":["script"],
  "load-type":["third-party"],
- "if-domain":["www.qyl61.com"]
+ "if-domain":["m.xxshu5.com","m.huanyue123.com","m.mxguan.com","m.x23us.com","m.shuquge.com"]
  }
  }
  ]
